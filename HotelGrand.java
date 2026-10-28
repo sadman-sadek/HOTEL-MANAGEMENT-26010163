@@ -29,7 +29,7 @@ public class HotelGrand {
                     break;
                 case 5:
                     running = false;
-                    System.out.println("\\nThank you for visiting Hotel Grand!");
+                    System.out.println("\nThank you for visiting Hotel Grand!");
                     break;
                 default:
                     System.out.println("Invalid option. Please choose 1-5.");
@@ -46,7 +46,7 @@ public class HotelGrand {
     }
 
     private static void showMainMenu() {
-        System.out.println("\\n================================");
+        System.out.println("\n================================");
         System.out.println("       WELCOME TO HOTEL GRAND");
         System.out.println("================================");
         System.out.println("1. View Rooms");
