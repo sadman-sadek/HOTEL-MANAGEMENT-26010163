@@ -81,7 +81,7 @@ public class HotelGrand {
     }
 
     private static void viewRooms() {
-        System.out.println("\\n--- ROOMS ---");
+        System.out.println("\n--- ROOMS ---");
         for (Room room : rooms) {
             room.display();
         }
@@ -89,15 +89,15 @@ public class HotelGrand {
     }
 
     private static void viewFeatures() {
-        System.out.println("\\n--- ROOM FEATURES & PRICES ---");
+        System.out.println("\n--- ROOM FEATURES & PRICES ---");
         System.out.println("Normal Room | Comfortable room, bed, fan/AC | Tk 1,500 per night");
         System.out.println("Luxury Room | Spacious room, premium bed, AC | Tk 3,500 per night");
-        System.out.println("\\nRoom prices are charged per night.");
+        System.out.println("\nRoom prices are charged per night.");
         returnToMenu();
     }
 
     private static void checkIn() {
-        System.out.println("\\n--- CHECK IN / BOOK A ROOM ---");
+        System.out.println("\n--- CHECK IN / BOOK A ROOM ---");
         ArrayList<Room> availableRooms = new ArrayList<>();
         for (Room room : rooms) {
             if (!room.isBooked()) {
@@ -140,7 +140,7 @@ public class HotelGrand {
         bookings.add(booking);
         selectedRoom.setBooked(true);
 
-        System.out.println("\\nBooking successful!");
+        System.out.println("\nBooking successful!");
         System.out.println("Guest: " + guest.getName());
         System.out.println("Room: " + selectedRoom.getRoomNumber() + " (" + selectedRoom.getType() + ")");
         System.out.println("Stay: " + nights + " night(s)");
@@ -149,7 +149,7 @@ public class HotelGrand {
     }
 
     private static void checkOut() {
-        System.out.println("\\n--- CHECK OUT / PAY BILL ---");
+        System.out.println("\n--- CHECK OUT / PAY BILL ---");
         ArrayList<Booking> activeBookings = new ArrayList<>();
         for (Booking booking : bookings) {
             if (booking.getRoom().isBooked()) {
@@ -236,7 +236,7 @@ public class HotelGrand {
     }
 
     private static void returnToMenu() {
-        System.out.println("\\n0. Return to Main Menu");
+        System.out.println("\n0. Return to Main Menu");
         while (true) {
             int choice = readInt("Enter 0 to return: ");
             if (choice == 0) {
